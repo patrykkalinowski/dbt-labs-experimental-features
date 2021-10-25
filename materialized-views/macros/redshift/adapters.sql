@@ -84,9 +84,9 @@
   
   {% if rel.type == 'materializedview' and execute %}
   
-    {# materialized views are not properly registered in pg_depend,
-       so the cache can miss that they've been dropped
-       https://github.com/awslabs/amazon-redshift-utils/issues/499 #}
+    {#-- materialized views are not properly registered in pg_depend,     --#}
+    {#-- so the cache can miss that they've been dropped                  --#}
+    {#-- see: https://github.com/awslabs/amazon-redshift-utils/issues/499 --#}
 
     {% set hard_check_mv_sql %}
 

@@ -29,7 +29,7 @@
           {{ build_sql }}
       {% endcall %}
   {% else %}
-    {{ store_result('main', 'SKIP') }}
+    {{ store_result('main', 'PASS') }}
   {% endif %}
 
   {{ run_hooks(post_hooks) }}
