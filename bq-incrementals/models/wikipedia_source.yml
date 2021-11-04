@@ -1,7 +1,0 @@
-version: 2
-
-sources:
-  - name: wikipedia
-    database: "bigquery-public-data"
-    tables:
-      - name: pageviews_2020
